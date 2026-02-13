@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Br tour turismo e Transfer ltda | Oficial - Rio & Região dos Lagos</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="logo.png" alt="Br tour turismo e Transfer ltda">
+            </div>
+            
+            <div class="menu-hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav id="nav-menu">
+                <ul>
+                    <li><a href="#home" onclick="toggleMenu()">Início</a></li>
+                    <li><a href="#destinos" onclick="toggleMenu()">Destinos</a></li>
+                    <li><a href="#servicos" onclick="toggleMenu()">Serviços</a></li>
+                    <li><a href="#contato" onclick="toggleMenu()">Contato</a></li> 
+                    <li><a href="#contato" class="btn-nav" onclick="toggleMenu()">Agendar Agora</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Sua melhor escolha de transfer no Rio</span>
+            <h1>Conforto e Qualidade em <br><span>Transporte Executivo</span></h1>
+            <p>Especialistas em traslados para Búzios, Cabo Frio, Arraial do Cabo e Aeroportos (GIG/SDU).</p>
+            <div class="hero-btns">
+                <a href="#contato" class="btn-primary">Solicitar Orçamento</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="destinos" class="container section-padding">
+        <h2 class="section-title">Principais Destinos</h2>
+        <div class="grid-destinos">
+            <div class="destino-card">
+                <img src="buzios.jpg" alt="Búzios">
+                <div class="destino-info">
+                    <h3>Armação dos Búzios</h3>
+                    <p>Região dos Lagos</p>
+                </div>
+            </div>
+            <div class="destino-card">
+                <img src="cabofrio.jpg" alt="Cabo Frio">
+                <div class="destino-info">
+                    <h3>Cabo Frio</h3>
+                    <p>Região dos Lagos</p>
+                </div>
+            </div>
+            <div class="destino-card">
+                <img src="arraial.jpg" alt="Arraial do Cabo">
+                <div class="destino-info">
+                    <h3>Arraial do Cabo</h3>
+                    <p>Região dos Lagos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="bg-light section-padding">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="icon">✈️</div>
+                    <h3>Aeroportos</h3>
+                    <p>Receptivo personalizado no Galeão (GIG), Santos Dumont (SDU) e Porto.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🚐</div>
+                    <h3>City Tour</h3>
+                    <p>Roteiros exclusivos pelo Cristo Redentor, Pão de Açúcar e Praias.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">💼</div>
+                    <h3>Executivo</h3>
+                    <p>Transporte de alto padrão com discrição, segurança e pontualidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-padding">
+    <div class="container">
+        <h2 class="section-title">Fale Conosco</h2>
+        <div class="contato-wrapper">
+            
+            <div class="contato-form-box">
+                <h3>Solicite seu Orçamento</h3>
+                <div class="form-container">
+                    <div class="input-group">
+                        <input type="text" id="nome_cli" placeholder="Seu Nome Completo" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email_cli" placeholder="Seu E-mail Profissional" required>
+                    </div>
+                    <div class="input-row">
+                        <input type="text" id="origem_cli" placeholder="Origem (Ex: Galeão)">
+                        <input type="text" id="destino_cli" placeholder="Destino (Ex: Búzios)">
+                    </div>
+                    <div class="input-group">
+                        <textarea id="msg_cli" placeholder="Data, Horário e Número de Passageiros" rows="4"></textarea>
+                    </div>
+                    <button onclick="enviarWpp()" class="btn-send-wpp">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                        Enviar para o WhatsApp
+                    </button>
+                </div>
+            </div>
+
+            <div class="contato-info-box">
+                <div class="info-card">
+                    <h4>Canais de Atendimento</h4>
+                    <p><strong>Responsável:</strong> Italo Morais</p>
+                    <p><strong>WhatsApp:</strong> +55 (22) 99290-2525</p>
+                    <p><strong>E-mail:</strong> italomorais948@gmail.com</p>
+                    <p><strong>Empresa:</strong> Br tour turismo e Transfer ltda</p>
+                    <p><strong>CNPJ:</strong> 54.350.778/0001-50</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+    <footer class="footer-moderno">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><strong>WhatsApp:</strong> +55 (22) 99290-2525</li>
+                        <li><strong>E-mail:</strong> italomorais948@gmail.com</li>
+                        <li><strong>Endereço:</strong> Zumbi praia 25, Morais Center. Rio do Fogo/RN, 59578-000</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Informações</h4>
+                    <p><strong>Br tour turismo e Transfer ltda.</strong></p>
+                    <p>CNPJ: 54.350.778/0001-50</p>
+                    <ul>
+                        <li><a href="privacidade.html">Política de privacidade</a></li>
+                        <li><a href="termos.html">Termos de uso</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col social-links">
+                    <span class="social-icon">FB</span>
+                    <span class="social-icon">IG</span>
+                    <span class="social-icon">TA</span>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <div class="footer-col">
+                    <h5>Aceitamos todos os cartões</h5>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright-bar">
+            &copy; 2026 Br tour turismo e Transfer ltda 
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5522992902525" class="wpp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        <span class="wpp-tooltip">Reserve pelo WhatsApp!</span>
+    </a>
+
+    <script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav-menu');
+        const hamburger = document.querySelector('.menu-hamburger');
+        nav.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    }
+
+    function enviarWpp() {
+        const nome = document.getElementById('nome_cli').value;
+        const origem = document.getElementById('origem_cli').value;
+        const destino = document.getElementById('destino_cli').value;
+        const msg = document.getElementById('msg_cli').value;
+
+        if(!nome || !origem || !destino) {
+            alert("Por favor, preencha os campos de Nome, Origem e Destino.");
+            return;
+        }
+
+        const texto = `Olá Italo! Meu nome é ${nome}. Gostaria de um orçamento para o transfer:%0A%0A*Origem:* ${origem}%0A*Destino:* ${destino}%0A*Detalhes:* ${msg}`;
+        const link = `https://wa.me/5522992902525?text=${texto}`;
+
+        window.open(link, '_blank');
+    }
+    </script>
+
+</body>
+</html>
